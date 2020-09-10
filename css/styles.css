@@ -43,3 +43,58 @@ img {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
+div {
+    background-color: red;
+    position: relative;
+    animation-name: fancy_div;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fancy_div {
+    0% {
+        background-color:red;
+        left:50px;
+        top:50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px 0 50px 0;
+    }
+
+    25% {
+        background-color:yellow;
+        left:250px;
+        top:50px;
+        width: 200px;
+        height: 200px;
+        border-radius: 0 100px 0 100px;
+    }
+
+    50% {
+        background-color:green;
+        left:250px;
+        top:250px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px 0 50px 0;
+    }
+
+    75% {
+        background-color:blue;
+        left:50px;
+        top:250px;
+        width: 200px;
+        height: 200px;
+        border-radius: 0 100px 0 100px;
+    }
+
+    100% {
+        background-color:red;
+        left:50px;
+        top:50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px 0 50px 0;
+    }
+}
